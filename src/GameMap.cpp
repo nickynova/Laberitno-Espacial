@@ -56,7 +56,6 @@ bool GameMap::SetPlayerCell(int PlayerX, int PlayerY)
     {
         if (Cells[PlayerX][PlayerY].id == '$')
         {
-            DrawVictory();
             isGameOver = true;
             return true;
         }
@@ -129,25 +128,3 @@ void GameMap::LoadMapFromFile()
     
 }
 
-void GameMap::DrawVictory()
-{
-    string line;
-    ifstream MyFile("Victory.txt");
-
-    if (MyFile.is_open())
-    {
-        while ( getline(MyFile, line))
-        {
-            cout << line << endl;
-        }
-
-        cin >> line;
-        
-    }
-    else
-    {
-        cout << "FATAL ERROR: VICTORY COULD NOT BE LOADED" << endl;
-    }
-
-
-}

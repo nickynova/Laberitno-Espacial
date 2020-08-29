@@ -20,7 +20,6 @@ public:
 
     void DrawIntro();
 
-    void DrawVictory();
 
     //Esta funcion tiene las cordenadas de player y actualiza el mapa
     bool SetPlayerCell(int PlayerX, int PlayerY);

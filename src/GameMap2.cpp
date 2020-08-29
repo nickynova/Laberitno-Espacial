@@ -15,9 +15,9 @@ GameMap2::GameMap2()
 
 void GameMap2::Draw()
 {
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < 30; i++)
     {
-        for (int p = 0; p < 30; p++)
+        for (int p = 0; p < 50; p++)
         {
             cout << Cells[i][p].id;
         }
@@ -27,28 +27,6 @@ void GameMap2::Draw()
     
 }
 
-void GameMap2::DrawIntro()
-{
-    string line;
-    ifstream MyFile("Intro.txt");
-
-    if (MyFile.is_open())
-    {
-        while ( getline(MyFile, line))
-        {
-            cout << line << endl;
-        }
-
-        cin >> line;
-        
-    }
-    else
-    {
-        cout << "FATAL ERROR: INTRO COULD NOT BE LOADED" << endl;
-    }
-
-
-}
 
 bool GameMap2::SetPlayerCell(int PlayerX, int PlayerY)
 {
@@ -84,7 +62,7 @@ bool GameMap2::SetPlayerCell(int PlayerX, int PlayerY)
 
 void GameMap2::LoadMapFromFile()
 {
-    /* ofstream FileCreated("Map.txt");
+    /* ofstream FileCreated("Map2.txt");
 
     if (FileCreated.is_open())
     {
@@ -97,7 +75,7 @@ void GameMap2::LoadMapFromFile()
     
     string line;
     int row = 0;
-    ifstream MyFile("Map.txt");
+    ifstream MyFile("Map2.txt");
 
     if (MyFile.is_open())
     {

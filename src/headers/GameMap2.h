@@ -14,11 +14,11 @@ public:
     GameMap2();
 
     MapCell* PlayerCell;
-    MapCell Cells [10][30];
+    MapCell Cells [30][50];
 
     void Draw();
 
-    void DrawIntro();
+    void DrawSndlevel();
 
     void DrawVictory();
 
