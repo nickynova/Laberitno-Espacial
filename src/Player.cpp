@@ -1,12 +1,14 @@
 #include <iostream>
 #include "../src/headers/Player.h"
 
+
 using namespace std;
 
 Player::Player()
 {
     x = 1;
     y = 1;
+    
 }
 
 void Player::CallInput()
@@ -37,9 +39,9 @@ void Player::CallInput()
         lastX = x;
         x -= 1;
         break;  
-
+    case 'p':
+        cout << "te has salido del juego" << endl;
     }
-    
     
 }
 

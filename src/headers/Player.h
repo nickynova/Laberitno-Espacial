@@ -18,7 +18,7 @@ public:
 
     void ResetToSafePos();
 
-    
+   
 };
 
 #endif // PLAYER_H

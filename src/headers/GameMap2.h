@@ -1,9 +1,9 @@
-#ifndef GAMEMAP_H
-#define GAMEMAP_H
+#ifndef GAMEMAP2_H
+#define GAMEMAP2_H
 
 #include "MapCell.h"
 
-class GameMap
+class GameMap2
 {
 protected:
 
@@ -11,7 +11,7 @@ protected:
     
 public:
 
-    GameMap();
+    GameMap2();
 
     MapCell* PlayerCell;
     MapCell Cells [10][30];

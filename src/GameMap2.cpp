@@ -1,10 +1,10 @@
 #include <iostream>
-#include "../src/headers/GameMap.h"
+#include "../src/headers/GameMap2.h"
 #include <fstream>
 
 using namespace std;
 
-GameMap::GameMap()
+GameMap2::GameMap2()
 {
     id = ' ';
     PlayerCell = NULL;
@@ -13,7 +13,7 @@ GameMap::GameMap()
 
 }
 
-void GameMap::Draw()
+void GameMap2::Draw()
 {
     for (int i = 0; i < 10; i++)
     {
@@ -27,7 +27,7 @@ void GameMap::Draw()
     
 }
 
-void GameMap::DrawIntro()
+void GameMap2::DrawIntro()
 {
     string line;
     ifstream MyFile("Intro.txt");
@@ -50,7 +50,7 @@ void GameMap::DrawIntro()
 
 }
 
-bool GameMap::SetPlayerCell(int PlayerX, int PlayerY)
+bool GameMap2::SetPlayerCell(int PlayerX, int PlayerY)
 {
     if (Cells[PlayerX][PlayerY].IsBlocked() == false)
     {
@@ -82,7 +82,7 @@ bool GameMap::SetPlayerCell(int PlayerX, int PlayerY)
     
 }
 
-void GameMap::LoadMapFromFile()
+void GameMap2::LoadMapFromFile()
 {
     /* ofstream FileCreated("Map.txt");
 
@@ -129,7 +129,7 @@ void GameMap::LoadMapFromFile()
     
 }
 
-void GameMap::DrawVictory()
+void GameMap2::DrawVictory()
 {
     string line;
     ifstream MyFile("Victory.txt");
