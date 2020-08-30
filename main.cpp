@@ -48,8 +48,7 @@ int main()
     {
         
         //el loop del mapa 2
-        cout << "introduce el comando de movimiento 'w' 'a' 's' 'd' " << endl;
-        cout << "Has pasado de nivel! Ahora deberas lleva tu nave espacial por el laberinto hasta llegar al tesoro escondido en alguno de los signos $" << endl;
+        cout << ".....Has pasado al NIVEL 2!! Ahora deberas lleva tu nave espacial por el laberinto hasta llegar al tesoro escondido en alguno de los signos escondidos (@, $, &)....." << endl;
         Hero.CallInput();
     
         
